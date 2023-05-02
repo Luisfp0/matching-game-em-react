@@ -1,0 +1,8 @@
+.container-score {
+  display: flex;
+  background-color: red;
+}
+
+.score-points {
+  justify-content: space-between;
+}

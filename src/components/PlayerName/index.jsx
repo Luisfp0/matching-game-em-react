@@ -3,7 +3,7 @@ import './style.css'
 function Player(props) {
   
   return (
-    <div>{props.name}</div>
+    <div className={props.className}>{props.name}</div>
   )
 }
 
