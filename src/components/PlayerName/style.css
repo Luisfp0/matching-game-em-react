@@ -1,3 +1,11 @@
-.players {
+.player1 {
   color: white;
+  font-size: 10px;
+  font-family: 'Press Start 2p', cursive;
+}
+
+.player2 {
+  color: white;
+  font-size: 10px;
+  font-family: 'Press Start 2p', cursive;
 }
