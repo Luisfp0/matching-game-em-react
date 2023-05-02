@@ -8,6 +8,7 @@ function ScoreBoard() {
     <div className='scoreBoard'>
       <Player className='player1' name='Player 1'/>
       <PlayerScore />
+      <span className='vs'>vs</span>
       <PlayerScore />
       <Player className='player2' name='Player 2'/>
     </div>

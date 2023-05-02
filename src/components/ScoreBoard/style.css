@@ -1,17 +1,16 @@
 .scoreBoard {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: #7C5E99;
   height: 70px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 
-.Player1 {
-  background-color: blue;
-}
-
-.Player2 {
-  background-color: red;
+.vs {
+  color: #F5D547;
+  font-size: 0.8rem;
 }
