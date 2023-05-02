@@ -6,11 +6,11 @@ function ScoreBoard() {
 
   return (
     <div className='scoreBoard'>
-      <Player className='player1' name='Player 1'/>
+      <Player className='player1' name='Player1'/>
       <PlayerScore />
       <span className='vs'>vs</span>
       <PlayerScore />
-      <Player className='player2' name='Player 2'/>
+      <Player className='player2' name='Player2'/>
     </div>
   )
 }
