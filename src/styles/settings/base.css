@@ -1,0 +1,11 @@
+html,
+body {
+  font-size: 10px;
+  height: 100%;
+
+}
+
+body {
+  background-color: #7C5E99;
+  font-family: 'Press Start 2p', cursive;
+}
