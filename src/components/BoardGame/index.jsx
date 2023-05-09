@@ -62,7 +62,6 @@ function BoardGame() {
     toggleCardVisible(card)
     if(waitingCard === null) {
       setWaitingCard(card)
-      console.log("Usestate",card)
       return
     }
     if(waitingCard.figure === card.figure) {
@@ -70,10 +69,10 @@ function BoardGame() {
       setWaitingCard(null)
     } else {
       setTimeout(() => {
+        document.querySelector('.arrowDown').classList.toggle('arrowRight')
         toggleCardVisible(card)
         toggleCardVisible(waitingCard)
-      },500)
-
+      },600)
       setWaitingCard(null)
     }
   }
