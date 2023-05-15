@@ -16,3 +16,19 @@
   text-indent: -9999px;
   overflow: hidden;
 }
+
+.container-score[data-points='1'] > .score-points:first-child {
+  background-color: green;
+}
+
+.container-score[data-points='2']{
+  flex-direction: row-reverse;
+}
+
+.container-score[data-points='2'] > .score-points:nth-child(n+2) {
+  background-color: green;
+}
+
+.container-score[data-points='3'] > .score-points {
+  background-color: green;
+}

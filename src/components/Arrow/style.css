@@ -2,14 +2,15 @@
   position: absolute;
 }
 
-.arrowDown {
+.containerArrow > .arrowDown {
   position: relative;
   bottom: 20px;
+}
+
+.player-one { 
   right: 45px;
 }
 
-.arrowRight {
-  position: relative;
-  bottom: 20px;
+.player-two {
   left: 45px;
 }

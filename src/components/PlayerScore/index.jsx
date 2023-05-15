@@ -1,8 +1,8 @@
 import './style.css'
 
-function PlayerScore() {
+function PlayerScore(props) {
   return(
-      <ol className='container-score'>
+      <ol className={props.className} data-points={props.points}>
         <li className='score-points'>1</li>
         <li className='score-points'>2</li>
         <li className='score-points'>3</li>

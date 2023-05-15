@@ -43,9 +43,10 @@ const CARDS = [
 
 const RANDOM_CARDS = CARDS.sort(() => 0.5 - Math.random())
 
-function BoardGame() {
+function BoardGame(props) {
   const [cards, setCards] = useState(RANDOM_CARDS)
   const [waitingCard, setWaitingCard] = useState(null)
+
 
   function toggleCardVisible(card) {
     const newCards = cards.map((c) => {
@@ -65,18 +66,26 @@ function BoardGame() {
       return
     }
     if(waitingCard.figure === card.figure) {
-      console.log("Iguais")
+      console.log("Iguais") 
       setWaitingCard(null)
+      if(props.currentPlayer === 1){
+        props.playerOneScored()
+      } else { 
+        props.playerTwoScored()
+      }
     } else {
       setTimeout(() => {
-        document.querySelector('.arrowDown').classList.toggle('arrowRight')
+        if(props.currentPlayer === 1){
+          props.setCurrentPlayer(2)
+        } else {
+          props.setCurrentPlayer(1)
+        }
         toggleCardVisible(card)
         toggleCardVisible(waitingCard)
       },600)
       setWaitingCard(null)
     }
-  }
-
+  } 
   return (
     <div className='boardGame'>
       {
